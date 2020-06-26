@@ -13,3 +13,6 @@ def about(request):
 def homepage(request):
     return render(request, 'webapp/home.html')
 
+
+def dashboard(request):
+    return render(request, 'webapp/dashboard.html')
