@@ -3,9 +3,13 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at index page of your application")
+    return render(request, 'webapp/home.html')
+
+
+def about(request):
+    return render(request, 'webapp/about.html')
 
 
 def homepage(request):
-    return render(request, 'webapp/homepage.html')
+    return render(request, 'webapp/home.html')
 
